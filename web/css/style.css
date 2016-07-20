@@ -1,13 +1,68 @@
-body {
-  text-align: center;
-}
 img {
   margin: 100px 30px;
   max-width: 900px;
 }
-div {
-  color: #088898;
-  text-align: center;
+
+.logo {
+  margin: auto;
+  width: 90%;
+}
+
+.info {
+  color: #666;
+  font-family: monospace;;
   font-size: 1.4rem;
-  font-family: monospace;
+  margin: auto;
+  overflow: hidden;
+  text-align: left;
+  width: 80%;
+}
+
+.info a {
+  color: #088898;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.address,
+.phone,
+.email,
+.facebook,
+.instagram {
+  padding: 5px 20px 5px 0;
+}
+
+.timetable table {
+  color: #666;
+  font-size: inherit;
+  margin: 20px 0 0 -2px;
+}
+
+.timetable td, .timetable th {
+  vertical-align: top;
+}
+
+.timetable .days {
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.info .col {
+  float: left;
+  width: 50%;
+}
+
+.fa {
+  color: #088898;
+}
+
+@media (max-width: 760px) {
+  .info .col {
+    float: none;
+    margin-bottom: 60px;
+    width: 100%;
+  }
 }
