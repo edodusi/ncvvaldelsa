@@ -60,7 +60,11 @@ img {
   color: #088898;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
+  .info {
+    font-size: 1.8rem;
+  }
+
   .info .col {
     float: none;
     margin-bottom: 60px;
