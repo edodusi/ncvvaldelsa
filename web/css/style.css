@@ -78,13 +78,21 @@ footer {
 }
 
 @media (max-width: 960px) {
+  .logo img {
+    margin: 40px 10px 60px;
+  }
+
   .info {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .info .col {
     float: none;
     margin-bottom: 60px;
     width: 100%;
+  }
+
+  footer {
+    margin: 10px auto 0;
   }
 }
