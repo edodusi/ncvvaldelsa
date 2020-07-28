@@ -1,16 +1,15 @@
-web:
-  image: nginx:latest
-  hostname: ncvvaldelsa
-  environment:
-    - DNSDOCK_ALIAS=ncvvaldelsa.loc
-  restart: always
-  ports:
-    - "80:80"
-  volumes:
-    - ./web:/usr/share/nginx/html
-    - ./nginx_site.conf:/etc/nginx/conf.d/nginx_site.conf
-
-php:
-  image: php:7-fpm
-  volumes:
-    - ./web:/usr/share/nginx/html
+version: '3.5'
+services:
+  web:
+    image: nginx:1.19.1-alpine
+    restart: always
+    ports:
+      - "80:80"
+    working_dir: /usr/share/nginx/html
+    volumes:
+      - ./web:/usr/share/nginx/html
+    labels:
+      com.dnsdock.alias: ncvvaldelsa.loc
+    environment:
+      - NGINX_HOST=ncvvaldelsa.loc
+      - NGINX_PORT=80

@@ -37,8 +37,15 @@ img {
 .email,
 .facebook,
 .instagram,
-.gplus {
+.gplus,
+.twitter,
+.whatsapp {
   padding: 5px 20px 5px 0;
+}
+
+.whatsapp {
+  color: #088898;
+  text-decoration: none;
 }
 
 .timetable table {
@@ -70,11 +77,15 @@ footer {
   clear: both;
   color: #666;
   font-family: monospace;;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 80px auto 0;
   overflow: hidden;
   text-align: left;
   width: 80%;
+}
+
+footer strong {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 960px) {
@@ -83,7 +94,7 @@ footer {
   }
 
   .info {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .info .col {
