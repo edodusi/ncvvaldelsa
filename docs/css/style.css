@@ -88,6 +88,25 @@ footer strong {
   font-size: 1.2rem;
 }
 
+footer .col {
+  float: left;
+}
+
+footer .col:first-child {
+  width: 80%;
+}
+
+footer .col:last-child {
+  width: 20%;
+}
+
+footer img {
+  float: right;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  width: 12rem;
+}
+
 @media (max-width: 960px) {
   .logo img {
     margin: 40px 10px 60px;
@@ -105,5 +124,16 @@ footer strong {
 
   footer {
     margin: 10px auto 0;
+  }
+
+  footer .col {
+    float: none;
+    width: 100% !important;
+  }
+
+  footer img {
+    width: 50%;
+    float: none;
+    margin-left: -6px;
   }
 }
