@@ -7,7 +7,7 @@ services:
       - "80:80"
     working_dir: /usr/share/nginx/html
     volumes:
-      - ./web:/usr/share/nginx/html
+      - ./docs:/usr/share/nginx/html
     labels:
       com.dnsdock.alias: ncvvaldelsa.loc
     environment:
