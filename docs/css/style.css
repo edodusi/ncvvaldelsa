@@ -1,0 +1,109 @@
+html {
+  border-top: 2px solid #088898;
+}
+
+img {
+  margin: 100px 30px;
+  max-width: 900px;
+}
+
+.logo {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.info {
+  color: #666;
+  font-family: monospace;;
+  font-size: 1.4rem;
+  margin: auto;
+  overflow: hidden;
+  text-align: left;
+  width: 80%;
+}
+
+.info a {
+  color: #088898;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.address,
+.phone,
+.email,
+.facebook,
+.instagram,
+.gplus,
+.twitter,
+.whatsapp {
+  padding: 5px 20px 5px 0;
+}
+
+.whatsapp {
+  color: #088898;
+  text-decoration: none;
+}
+
+.timetable table {
+  color: #666;
+  font-size: inherit;
+  margin: 20px 0 0 -2px;
+}
+
+.timetable td, .timetable th {
+  vertical-align: top;
+}
+
+.timetable .days {
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.info .col {
+  float: left;
+  width: 50%;
+}
+
+.fa {
+  color: #088898;
+}
+
+footer {
+  border-top: 2px solid #088898;
+  clear: both;
+  color: #666;
+  font-family: monospace;;
+  font-size: 1.1rem;
+  margin: 80px auto 0;
+  overflow: hidden;
+  text-align: left;
+  width: 80%;
+}
+
+footer strong {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 960px) {
+  .logo img {
+    margin: 40px 10px 60px;
+  }
+
+  .info {
+    font-size: 1.2rem;
+  }
+
+  .info .col {
+    float: none;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  footer {
+    margin: 10px auto 0;
+  }
+}
